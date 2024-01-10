@@ -1,5 +1,7 @@
 package sis.hust.mssv20200547
 
+import android.os.Build
+import androidx.annotation.RequiresApi
 import sis.hust.mssv20200547.data.source.student.StudentEntity
 import java.time.LocalDate
 
@@ -14,7 +16,7 @@ class Student(
     ) : this(
         studentEntity.mssv,
         studentEntity.name,
-        studentEntity.birthday,
+        LocalDate.parse(studentEntity.birthday),
         studentEntity.homeTown
     )
 

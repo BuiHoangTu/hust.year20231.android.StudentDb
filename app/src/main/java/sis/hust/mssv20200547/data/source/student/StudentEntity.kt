@@ -9,6 +9,6 @@ data class StudentEntity(
     @PrimaryKey val id: Int,
     val mssv: String,
     val name: String,
-    val birthday: LocalDate,
+    val birthday: String,
     val homeTown: String
 )
